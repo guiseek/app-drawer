@@ -19,13 +19,10 @@ export class MenuButtonElement extends HTMLElement {
 		`
 
     const input = this.querySelector('input')
+
     if (input) {
       input.onchange = () => {
-        if (input.checked) {
-          this.ariaChecked = 'true'
-        } else {
-          this.ariaChecked = 'false'
-        }
+        this.setAttribute('aria-checked', input.checked ? 'true' : 'false')
       }
     }
   }

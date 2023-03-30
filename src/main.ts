@@ -1,4 +1,3 @@
-import './menu.element'
+import './menu-button.element'
+import './user-profile.element'
 import './style.scss'
-
-console.log('ola')
